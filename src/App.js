@@ -10,10 +10,10 @@ export default class App extends Component {
 
    
     return (
-      <div style={{backgroundColor:'white'}}>
+      <div>
         this.c
         <Navbar/>
-        <News/>
+        <News category = 'cricket' />
        <hr />
        <hr />
        <Footer/>
