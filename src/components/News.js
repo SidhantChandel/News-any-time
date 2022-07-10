@@ -16,7 +16,8 @@ export default class News extends Component {
   }
 previousPage =async()=>{
   let url =
-  `https://newsapi.org/v2/everything?q=${this.props.category}&apiKey=343bacff2e9b4e31affb264d8bbc7e21&page=${this.state.page}&pagesize=${this.state.pageSize - 1}`;
+  `https://newsapi.org/v2/top-headlines?country=us&category=${this.props.category}&apiKey=343bacff2e9b4e31affb264d8bbc7e21&page=${this.state.page}&pagesize=${this.state.pageSize - 1}
+`;
 let data = await fetch(url);
 let content = await data.json();
 this.setState({ articles: content.articles });
