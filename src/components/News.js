@@ -11,7 +11,7 @@ export default class News extends Component {
       loding: false,
       totalResults :0,
       page :1,
-      pageSize :20
+      pageSize :24
     };
   }
 previousPage =async()=>{

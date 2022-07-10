@@ -12,26 +12,30 @@ export default class App extends Component {
 
   render() {
 
-    // <News category = 'cricket' />
+  
     return (
-      <div>
-       
+      <>
+      <div className='container'>
+      {/* <News category = 'sports' /> */}
        <Router>
        <Navbar/>        
         <Routes>
-        <Route path='/' element = {<News category ='world' />}/>
-        <Route path='/india' element = {<News category ='india' />}/>
-        <Route path='/finance' element = {<News category ='finance' />}/>
-        <Route path='/enetertainment' element = {<News category ='entertainment' />}/>
-        <Route path='/cricket' element = {<News category ='cricket' />}/>
-        <Route path='/football' element = {<News category ='football' />}/>
-        <Route path='/sports' element = {<News category ='general' />}/>
+        <Route path='/' element = {<News key = "general" category = 'general' />}/>
+        <Route path='/india' element = {<News key = "india" category = 'india' />}/>
+        <Route path='/world' element = {<News key = "world" category = 'world' />}/>
+        <Route path='/finance' element = {<News key = "finance" category = 'finance' />}/>
+        <Route path='/entertainment' element = {<News key = " entertainment" category = 'entertainment' />}/>
+        <Route path='/cricket' element = {<News key = "cricket" category = 'cricket' />}/>
+        <Route path='/football' element = {<News key = "football" category = 'football' />}/>
+        <Route path='/others' element = {<News key = "sports" category = 'sports' />}/>
         </Routes>
         </Router>
+      
+      </div>
        <hr />
        <hr />
        <Footer/>
-      </div>
+       </>
     )
   }
 }

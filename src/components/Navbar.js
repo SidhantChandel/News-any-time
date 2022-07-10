@@ -29,7 +29,7 @@ export default class Navbar extends Component {
               <Link className="nav-link" to="/entertainment" style={this.mystyle}>Entertainment</Link>
             </li>
             <li className="nav-item dropdown">
-              <Link className="nav-link dropdown-toggle" to ="/sports" style={this.mystyle} id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <Link className="nav-link dropdown-toggle" to ="/others" style={this.mystyle} id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Sports
               </Link>
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown" style={{backgroundColor:'#0D6efe',color :'black'}}>
@@ -40,10 +40,10 @@ export default class Navbar extends Component {
               </ul>
             </li>
           </ul>
-          <form className="d-flex" role="search">
-            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+          {/* <form className="d-flex" role="search">
+            <input className="form-control me-2" type="search" value={search} placeholder="Search" aria-label="Search"/>
             <button className="btn btn-outline-success" type="submit" style={{color:'red',backgroundColor:'black'}}>Search</button>
-          </form>
+          </form> */}
         </div>
         </div>
       </div>
